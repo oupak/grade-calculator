@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weighted grade calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="calc">
+        <h1>Grade Calculator</h1>
+        <div class="oung">
+          <h2>Activities</h2>
+          <p>Give grades to the numeric activities:</p>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Short Name</th>
+              <th>Weight</th>
+              <th>Grade</th>
+              <th>Percent</th>
+            </tr>
+            <tr>
+              <td>Activity 1</td>
+              <td>A1</td>
+              <td><input id="w1"></input></td>
+              <td><input id="grade1"></input>/<input id="total1"></input></td>
+              <td id="percent1"></td>
+            </tr>
+            <tr>
+              <td>Activity 2</td>
+              <td>A2</td>
+              <td><input id="w2"></input></td>
+              <td><input id="grade2"></input>/<input id="total2"></input></td>
+              <td id="percent2"></td>
+            </tr>
+            <tr>
+              <td>Activity 3</td>
+              <td>A3</td>
+              <td><input id="w3"></input></td>
+              <td><input id="grade3"></input>/<input id="total3"></input></td>
+              <td id="percent3"></td>
+            </tr>
+            <tr>
+              <td>Activity 4</td>
+              <td>A4</td>
+              <td><input id="w4"></input></td>
+              <td><input id="grade4"></input>/<input id="total4"></input></td>
+              <td id="percent4"></td>
+            </tr>
+          </table>
+          <button type="button" id="add">ADD ACTIVITY</button>
+          <h2>Result</h2>
+          <p id="res"></p>
+          <div style="display: flex; justify-content: flex-end;">
+            <button id="weighted" style="margin: 0 2px 0 2px">WEIGHTED</button>
+            <button id="mean" style="margin: 0 2px 0 2px">MEAN</button>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
