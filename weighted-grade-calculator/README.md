@@ -1,1 +1,0 @@
-# weighted grade calculator
